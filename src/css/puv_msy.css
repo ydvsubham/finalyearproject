@@ -1,0 +1,489 @@
+
+.msy-main{
+	background: url(../images/choosing-bg.jpg);
+	padding-top: 100px;
+  
+}
+.msy-project-area{
+  position: relative;
+}
+.msy-hire{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #0d6efd !important;
+  border: none !important;
+  margin: 10px;
+}
+.msy-filter{
+	color: white;
+	background: #0c1228;
+}
+.msy-filter button{
+	background: #343a40;
+	margin-bottom: 5px;
+	color: #ffffff;
+}
+.msg-description_text{
+	background: #105469;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.mlt-cont{
+    margin-bottom: 80px;
+    border: 2px solid #006E51;
+}
+
+.msy-main table{
+    margin-bottom: 0;
+}
+
+
+
+body {
+  background: #105469;
+  font-family: 'Open Sans', sans-serif;
+}
+.mlt-cont table {
+  background: #012B39;
+  border-radius: 0.25em;
+  border-collapse: collapse;
+  margin: 1em;
+}
+.mlt-cont th {
+  border-bottom: 1px solid #364043;
+  color: #E2B842;
+  font-size: 1.2em;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  text-align: left;
+}
+.mlt-cont td {
+  color: #fff;
+  font-weight: 400;
+  padding: 0.65em 1em;
+}
+.disabled td {
+  color: #4F5F64;
+}
+.mlt-cont tbody tr {
+  transition: background 0.25s ease;
+}
+.mlt-cont tbody tr:hover {
+  background: #014055;
+}
+
+
+.msy-timeline-cont{
+    border: 2px solid #006E51;
+}
+.msy-timeline-head{
+    background: #006E51;
+    margin: 0 auto;
+}
+.msy-timeline-head h2{
+    padding: 8px;
+    margin: 0 auto;
+}
+.msg-description-cnt{
+  border: 2px solid #006E51;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(to bottom, #222, #444);
+  color: #bbb;
+  padding: 1rem;
+  font-family: "Playfair Display", serif;
+}
+h1 {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+.timeline {
+  position: relative;
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 1300px;
+}
+.timeline:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  border: 1px solid hotpink;
+  right: 40px;
+  top: 0;
+}
+.timeline:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (min-width: 700px) {
+  .timeline {
+    padding: 2rem;
+ }
+  .timeline:before {
+    left: calc(50% - 1px);
+    right: auto;
+ }
+}
+.timeline__item {
+  padding: 1rem;
+  border: 2px solid hotpink;
+  border-image: linear-gradient(to right, skyblue 0%, hotpink 100%);
+  border-image-slice: 1;
+  position: relative;
+  margin: 1rem 3rem 1rem 1rem;
+  clear: both;
+}
+.timeline__item:after, .timeline__item:before {
+  content: "";
+  position: absolute;
+}
+.timeline__item:before {
+  right: -10px;
+  top: calc(50% - 5px);
+  border-style: solid;
+  border-color: hotpink hotpink transparent transparent;
+  border-width: 10px;
+  transform: rotate(45deg);
+}
+@media screen and (min-width: 700px) {
+  .timeline__item {
+    width: 44%;
+    margin: 1rem;
+ }
+  .timeline__item:nth-of-type(2n) {
+    float: right;
+    margin: 1rem;
+    border-image: linear-gradient(to right, hotpink 0%, skyblue 100%);
+    border-image-slice: 1;
+ }
+  .timeline__item:nth-of-type(2n):before {
+    right: auto;
+    left: -10px;
+    border-color: transparent transparent hotpink hotpink;
+ }
+}
+.timeline__item--year {
+  text-align: center;
+  max-width: 150px;
+  margin: 0 48px 0 auto;
+  font-size: 1.4rem;
+  background-color: #333;
+  line-height: 1;
+  border-image: none;
+  padding: 0.5rem 0.5rem 1rem 1rem;
+}
+.timeline__item--year:before {
+  display: none;
+}
+@media screen and (min-width: 700px) {
+  .timeline__item--year {
+    text-align: center;
+    margin: 0 auto;
+ }
+  .timeline__item--year:nth-of-type(2n) {
+    float: none;
+    margin: 0 auto;
+    border-image: none;
+ }
+  .timeline__item--year:nth-of-type(2n):before {
+    display: none;
+ }
+}
+.timeline__title {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5em;
+}
+.timeline__blurb {
+  line-height: 1.5;
+  font-size: 1rem;
+  margin: 0.5rem 0 0;
+}
+
+
+
+
+
+
+
+
+.msy-container {
+  padding: 15px 30px;
+  position: relative;
+  background: inherit;
+  width: 50%;
+}
+
+.msy-container.left {
+  left: 0;
+}
+
+.msy-container.right {
+  left: 50%;
+}
+
+.msy-container::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: calc(50% - 8px);
+  right: -8px;
+  background: #ffffff;
+  border: 2px solid #006E51;
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.msy-container.right::after {
+  left: -8px;
+}
+
+.msy-container::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  top: calc(50% - 1px);
+  right: 8px;
+  background: #006E51;
+  z-index: 1;
+}
+
+.msy-container.right::before {
+  left: 8px;
+}
+
+.msy-container .date {
+  position: absolute;
+  display: inline-block;
+  top: calc(50% - 8px);
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #006E51;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+.msy-container.left .date {
+  right: -75px;
+}
+
+.msy-container.right .date {
+  left: -75px;
+}
+
+.msy-container .icon {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 9px 0;
+  top: calc(50% - 20px);
+  background: #F6D155;
+  border: 2px solid #006E51;
+  border-radius: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: #006E51;
+  z-index: 1;
+}
+
+.msy-container.left .icon {
+  right: 56px;
+}
+
+.msy-container.right .icon {
+  left: 56px;
+}
+
+.msy-container .content {
+  padding: 30px 90px 30px 30px;
+  background: #F6D155;
+  position: relative;
+  border-radius: 0 500px 500px 0;
+}
+
+.msy-container.right .content {
+  padding: 30px 30px 30px 90px;
+  border-radius: 500px 0 0 500px;
+}
+
+.msy-container .content h2 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: normal;
+  color: #006E51;
+}
+
+.msy-container .content p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+}
+
+@media (max-width: 767.98px) {
+
+
+  .msy-container {
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 30px;
+  }
+
+  .msy-container.right {
+    left: 0%;
+  }
+
+  .msy-container.left::after, 
+  .msy-container.right::after {
+    left: 82px;
+  }
+
+  .msy-container.left::before,
+  .msy-container.right::before {
+    left: 100px;
+    border-color: transparent #006E51 transparent transparent;
+  }
+
+  .msy-container.left .date,
+  .msy-container.right .date {
+    right: auto;
+    left: 15px;
+  }
+
+  .msy-container.left .icon,
+  .msy-container.right .icon {
+    right: auto;
+    left: 146px;
+  }
+
+  .msy-container.left .content,
+  .msy-container.right .content {
+    padding: 30px 30px 30px 90px;
+    border-radius: 500px 0 0 500px;
+  }
+}
+
+
+
+.add-mem{
+  background-color: #0d6efd !important;
+  color: #fff !important;
+}
+.msy-add-member,.msy-remove-member{
+  border-top: 1px solid white;
+  position: relative;
+}
+.msy-remove-member input[type=email], .msy-add-member input[type=email],.msy-add-member input[type=number], .msy-add-member input[type=text]{
+  background-color: transparent;
+  border: none;
+  padding-left: 12px !important;
+  outline: none;
+  color: #ffffff;
+  width: 70%;
+}
+.msy-add-member input[type=text]{
+  border-right: 2px solid white;
+}
+.msy-remove-member input[type=submit], .msy-add-member input[type=submit]{
+  border-top-right-radius: 3rem !important;
+  border-bottom-right-radius: 3rem !important;
+  width: 30%;
+  height: 100%;
+  
+}
+.msy-remove-member .user-box , .msy-add-member .user-box{
+  border: 1px solid #fff;
+  border-top-right-radius: 3rem ;
+  border-bottom-right-radius: 3rem ;
+  
+}
+.msy-modal-table-head{
+  background-color: #012B39;
+  
+  border-bottom: 1px solid #364043;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(54, 64, 67);
+  color: #E2B842;
+  font-size: 1.2em;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  text-align: left;
+  border-radius: 0.25em;
+}
+.msy-modal-table-head h5{
+  margin: 0 !important;
+}
+.green-tick{
+  color: #7CFC00;
+}
+.red-cross{
+  color:  #FF0000;
+}
+.spinner-border{
+  width: 3rem;
+  height: 3rem;
+}
+.msy-modal-body{
+  position: relative;
+}
+.msy-loading-btn{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100000;
+}
+
+
+
+
+
+
+
+
+
+ 
+ .add-btn{
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+ }
+ .modal-header button{
+    color: white !important;
+ }
+
+ .add-descrip textarea{
+    min-height:260px !important;
+ }
+
+
+
+
+ .msy-jobs-cards{
+  border: 2px solid #006E51;
+  margin-top: 40px;
+ }
+
+ 
+
+.msy-jobs-cards .card {
+  background: #222;
+  border: 1px solid #dd2476;
+  color: rgba(250, 250, 250, 0.8);
+  margin-bottom: 2rem;
+}
+
+.graphtopmagin{
+  margin-top: 80px;
+}

@@ -1,0 +1,245 @@
+
+.msy-main{
+	background: url(../images/choosing-bg.jpg);
+	padding-top: 100px;
+  height: 90vh;
+}
+.msy-filter{
+	color: white;
+	background: #0c1228;
+}
+.msy-filter .create-btn{
+	background: #343a40;
+	margin-bottom: 5px;
+	color: #ffffff;
+}
+.msg-description_text{
+	background: #105469;
+}
+
+
+
+input,
+select,
+textarea,
+.create-btn {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+.create-btn,
+label {
+  cursor: pointer;
+}
+
+
+
+
+ul {
+  list-style: none;
+}
+
+
+
+.container {
+  
+  padding: 0 1.5rem;
+}
+
+
+
+
+.my-form select,
+.my-form input,
+.my-form textarea{
+  width: 100%;
+  line-height: 1.5;
+  padding: 15px 10px;
+  border: 1px solid var(--borderFormEls);
+  color: var(--white);
+  background: var(--bgFormEls);
+  transition: background-color 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25),
+    transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
+}
+
+.my-form textarea {
+  height: 170px;
+}
+
+
+
+/* MQ
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (min-width: 600px) {
+  .my-form .grid {
+    display: grid;
+    grid-gap: 1.5rem;
+  }
+
+  .my-form .grid-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .my-form .grid-3 {
+    grid-template-columns: auto auto auto;
+    align-items: center;
+  }
+
+  .my-form .grid > *:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .my-form .required-msg {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 541px) {
+  .my-form input[type="checkbox"] + label::before {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .my-form input[type="checkbox"]:checked + label::after {
+    top: 3px;
+  }
+}
+
+
+.plus {
+  display:inline-block;
+  width:20%;
+  height:95%;
+  
+  background:
+    linear-gradient(#fff 0 0),
+    linear-gradient(#fff 0 0),
+    hsl(0, 0%, 14%);
+  background-position:center;
+  background-size: 50% 2px,2px 50%; /*thickness = 2px, length = 50% (25px)*/
+  background-repeat:no-repeat;
+}
+.radius {
+  border-radius:50%;
+}
+
+
+
+
+.login-box {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input,.login-box .user-box textarea {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label,.login-box .user-box textarea:focus ~ label  {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+
+
+.btn {
+  padding: 8px 20px;
+  border-radius: 0;
+  overflow: hidden;
+  background: transparent;
+}
+.btn::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      transparent,
+      var(--primary-color),
+      transparent
+    );
+    transform: translateX(-100%);
+    transition: 0.6s;
+  }
+
+  .btn:hover {
+    background: transparent;
+    box-shadow: 0 0 20px 10px hsla(204, 70%, 53%, 0.5);
+
+    
+  }
+.btn:hover::before {
+      transform: translateX(100%);
+    }
+
+
+
+.add-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    background: inherit;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    color: white;
+    font-size: 55px;
+    font-weight: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 10px;
+    transition: .5s;
+}
+.add-btn:hover {
+    background: #007bff;
+}
+
+
+.temp{
+    border: solid 1px white;
+}
+
+
